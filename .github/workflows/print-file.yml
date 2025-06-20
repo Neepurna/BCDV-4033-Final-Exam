@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print file content to terminal
-        run: cat final_exam.txt
+        run: cat Final-Exam
