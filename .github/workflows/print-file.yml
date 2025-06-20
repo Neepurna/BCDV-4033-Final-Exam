@@ -1,0 +1,17 @@
+name: Print Final Exam File
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  print-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print file content to terminal
+        run: cat final_exam.txt
